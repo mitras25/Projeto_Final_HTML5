@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+
+}
+
+header {
+    height: 100px;
+    background-color: #605656;
+    padding: 10px 10px;
+    clear: both;
+    position: relative;
+    z-index: 3;
+}
+
+
+header a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+
+
+}
+
+header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #fff;
+}
+
+header a:hover {
+    background-color: #383838;
+    opacity: 0.8;
+    color: #fff;
+
+}
+
+
+.header-right {
+    float: right;
+}
+
+ul li {
+    display: inline-block;
+}
+
+#sub-menu {
+    position: absolute;
+    display: block;
+    top: 77px;
+    right: 120px;
+}
+
+#sub-menu li {
+    display: none;
+    color: black;
+    padding-bottom: 3px;
+
+}
+
+#sub-menu li a {
+    margin-bottom: 2px;
+    background-color: #383838;
+    width: 172px;
+    color: #fff;
+}
+
+#cursos:hover #sub-menu li {
+    display: block;
+
+
+}
+
+
+
+
+
+
+
+
+
+#direito {
+    float: right;
+    width: 500px;
+    margin-right: 10%;
+}
+
+#direito input {
+    float: right;
+    width: 300px;
+}
+
+#direito textarea {
+    float: right;
+}
+
+#botao {
+    clear: both;
+    
+}
+
+button {
+    display: block;
+
+}
+
+#txtitulo {
+    margin-top: 15px;
+}
+
+#txtitulo h2 {
+    margin: 0px;
+    text-align: center;
+
+}
+
+#txtitulo small {
+    display: block;
+    text-align: center;
+
+}
+
+#mapa {
+    margin-left: 10%;
+    float: left;
+}
+
+
+
+#complemento-footer {
+    margin: 45px 0 45px 0;
+    font-size: 14px;
+    color: #181717;
+    background-color: rgb(197, 194, 194);
+    height: 107px;
+    padding-top: 6px;
+}
+
+
+
+footer {
+    height: 6%;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    position: fixed;
+    bottom: 0;
+    color: #FFFBFB;
+    font-size: 12px;
+    display: inline-block;
+
+}
+
+#img-footer {
+    display: inline-block;
+    color: #FFFBFB;
+    padding-top: 7px;
+}
+
+/* botao */
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+  }
+  
+  button a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  
+  .button1 {
+    background-color: rgb(247, 136, 84); 
+    color: black; 
+    border: 2px solid #ff791f;
+    margin-bottom: 80px;
+    margin-top: 20px;
+  }
+  
+  .button1:hover {
+    background-color: #db2d01;
+  }
+  
+  .button1:hover a{
+    color: #FFFBFB;
+  }
+

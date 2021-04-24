@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+/*Header*/
+header {
+  height: 100px;
+  background-color: #605656;
+  padding: 10px 10px;
+  clear: both;
+  position: relative;
+  z-index: 3;
+}
+
+header a {
+  float: left;
+  color: #fffbfb;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+header a:hover {
+  background-color: #383838;
+  opacity: 0.8;
+}
+
+.header-right {
+  float: right;
+}
+
+ul li {
+  display: inline-block;
+}
+
+#sub-menu {
+  position: absolute;
+  display: block;
+  top: 77px;
+  right: 120px;
+}
+
+#sub-menu li {
+  display: none;
+  color: black;
+  padding-bottom: 3px;
+}
+
+#sub-menu li a {
+  margin-bottom: 2px;
+  background-color: #383838;
+  width: 172px;
+}
+
+#cursos:hover #sub-menu li {
+  display: block;
+}
+
+/*Header*/
+
+/*Equipe*/
+
+.foto-principal {
+  position: relative;
+  width: 100%;
+  opacity: 0.5;
+}
+
+h2 {
+  position: absolute;
+  top: 250px;
+  left: 70px;
+  font-size: 40px;
+}
+
+section {
+  z-index: 1;
+}
+
+#p-principal {
+  position: absolute;
+  top: 330px;
+  left: 100px;
+  width: 50%;
+  font-size: 20px;
+  color: black;
+  line-height: 30px;
+}
+
+/*
+footer {
+  height: 6%;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+}
+*/
+
+table {
+  height: 400px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 15px;
+}
+
+section h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgb(46, 45, 45);
+}
+
+#teste {
+  border-radius: 20%;
+  background-color: rgb(245, 245, 245);
+  width: 300px;
+  height: 300px;
+  /*alterado*/
+  transition-duration: 0.4s;
+}
+
+#teste img {
+  position: relative;
+  border-radius: 20%;
+  /*alterado*/
+  top: 20px;
+  height: 100px;
+}
+
+.p-curso {
+  position: relative;
+  top: 15px;
+  font-size: 25px;
+  width: 80%;
+}
+
+.p-content {
+  width: 80%;
+  margin-top: 50px;
+  line-height: 23px;
+}
+
+td a {
+  text-decoration: none;
+  color: black;
+}
+
+#teste:hover {
+  background-color: rgb(218, 218, 218);
+}
+
+/*alterado*/
+@media only screen and (max-width: 1000px) {
+  td {
+    float: left;
+    padding: 10px;
+  }
+}
+/*
+.priCol {
+  position: relative;
+  left: 100px;
+  bottom: 70px;
+}
+
+.segCol{
+  position: relative;
+  right: 100px;
+  bottom: 70px;
+}
+
+*/
+/*Equipe*/
+
+/*Footer*/
+#complemento-footer {
+  margin-bottom: 45px;
+  font-size: 14px;
+  color: #181717;
+    background-color: rgb(197, 194, 194);
+  height: 100px;
+  padding-top: 6px;
+}
+
+footer {
+  height: 6%;
+  width: 100%;
+  background-color: rgb(22, 22, 22);
+  position: fixed;
+  bottom: 0;
+  color: #fffbfb;
+  font-size: 12px;
+  display: inline-block;
+}
+
+#img-footer {
+  display: inline-block;
+  color: #fffbfb;
+  padding-top: 7px;
+}

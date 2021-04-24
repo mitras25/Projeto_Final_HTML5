@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulCode Academy - Formulario de Inscrição</title>
+    <link rel="stylesheet" href="estilo_form.css">
+</head>
+
+
+<body>
+
+    <header class="header">
+        <a href="../pagina-inicial/principalCorpo.html" class="logo">SoulCode</a>
+        <nav class="header-right">
+
+            <ul>
+                <li><a href="../pagina-inicial/principalCorpo.html">Home</a></li>
+                <li id="cursos"><a href="#cursos">Cursos</a>
+                    <ul id="sub-menu">
+                        <li><a href="../Design/Design.html">Design</a></li>
+                    <li><a href="../TI e Software/TIeSoftware.html">TI e Software</a></li>
+                    <li><a href="../Desenvolvimento/Desenvolvimento.html">Desenvolvimento</a></li>
+                    <li><a href="../DesenvolvimentoPessoal/DesenvolvimentoPessoal.html">Desenvolvimento Pessoal</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contato/contato.html">Contato</a></li>
+                <li><a href="../equipe/html/indexEquipe.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="texto">
+            <h2>Instruções</h2>
+            <p>Agradecemos a confiança, segue abaixo uma lista de documentos
+                que devem ser enviados, após a confirmação por e-mail da
+                matricula no curso. </p>
+            <ol>
+                <li>Comprovante de endereço</li>
+                <li>Cópia do RG</li>
+                <li>Cópia do CPF</li>
+            </ol>
+
+            <p>A seguir temos o formulário de incrição</p>
+
+        </section>
+        <section>
+            <h2>Formulário de Inscrição</h2>
+        </section>
+        <form action="" method="POST">
+            <article id="inpcurso">
+                <label for="curso">Curso: </label>
+                <input list="curso" placeholder="Escolha o Curso">
+                <datalist id="curso">
+                    <option value="Design"></option>
+                    <option value="TI e Software"></option>
+                    <option value="Desenvolvimento"></option>
+                    <option value="Desenvolvimento Pessoal"></option>
+                </datalist>
+            </article>
+
+            <article id="esquerda">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo">
+                <br><br>
+
+                <label for="dataNasc">Data de Nascimento: </label>
+                <input type="date" name="dataNasc" id="dataNasc">
+                <br><br>
+
+                <label for="idade">Idade: </label>
+                <input type="number" name="idade" id="idade">
+                <br><br>
+
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="joao@gmail.com">
+                <br><br>
+
+                <label for="genero">Gênero: </label>
+                <input list="genero" placeholder="Gênero">
+                <datalist id="genero">
+                    <option value="Feminino"></option>
+                    <option value="Masculino"></option>
+                    <option value="Personalizado"></option>
+                </datalist>
+                <br><br>
+            </article>
+            <article id="direita">
+                <label for="cel">Celular: </label>
+                <input pattern="^\d{2}-\d{5}-\d{4}$" type="tel" name="cel" id="cel" placeholder="XX-XXXXX-XXXX">
+                <br><br>
+
+                <label for="cpf">CPF: </label>
+                <input type="number" name="cpf" id="cpf" placeholder="Digitar Somente Números">
+                <br><br>
+
+                <label for="rg">RG: </label>
+                <input type="number" name="rg" id="rg" placeholder="Digitar Somente Números">
+                <br><br>
+
+                <label for="estado">Estado: </label>
+                <input list="estado" placeholder="Escolha seu Estado">
+                <datalist id="estado">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </datalist>
+                <br><br>
+
+                <label for="cidade">Cidade: </label>
+                <input type="text" name="cidade" id="cidade" placeholder="Digite o nome da Cidade">
+            </article>
+            <div id="botao" align="center">
+                <button class="button button1">
+                   <a href="#">Enviar</a>
+                </button>
+            </div>
+        </form>
+
+
+    </main>
+    <!--Final da pagina-->
+
+    <section>
+        <div id="complemento-footer" align="center">
+            <div id="img-footer">
+                <a href="https://www.facebook.com/SoulCodeAcademy" target="_blank"><img
+                        src="../img-midias/facebookreal.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img
+                        src="../img-midias/instagramreal.png" alt="Instagram"></a>
+                <a href="https://twitter.com/SoulCodeAcademy" target="_blank"><img src="../img-midias/twitter.png"
+                        alt="Twitter"></a>
+                <a href="https://www.linkedin.com/company/soulcodebrasil/" target="_blank"><img
+                        src="../img-midias/linkedin.png" alt="Linkedin"></a>
+            </div>
+            <p id="p-footer">Rua Helena, 235 Conj 111, 11ª andar - Vila Olímpia - São Paulo/SP - CEP: 04552-050</p>
+
+        </div>
+    </section>
+    <footer align="center">
+        <p>SOULCODE ACADEMY 2021</p>
+
+    </footer>
+
+</body>
+
+</html>
